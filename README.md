@@ -14,3 +14,7 @@ Ideally it covers the following topics:
 * Networking
   * Using `fetch`
   * Using Ember Data
+
+## Notes
+
+This app example includes a dev server that is used to serve up
