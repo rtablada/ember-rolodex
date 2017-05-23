@@ -1,1 +1,16 @@
-{{outlet}}
+<form onsubmit={{action "save"}}>
+  <p>
+    <label for="first-name">First Name</label>
+    {{input id="first-name" name="first-name" value=model.firstName}}
+  </p>
+  <p>
+    <label for="last-name">Last Name</label>
+    {{input id="last-name" name="last-name" value=model.lastName}}
+  </p>
+
+  <p>
+    {{#link-to "contact.index"}}Back{{/link-to}}
+
+    <button type="submit">Submit</button>
+  </p>
+</form>
