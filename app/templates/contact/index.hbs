@@ -1,1 +1,8 @@
-{{outlet}}
+<h2>All Contacts</h2>
+<h3>{{#link-to "contact.new"}}Add New Contact{{/link-to}}</h3>
+
+<ul>
+  {{#each model as |contact|}}
+    <li>{{contact.lastName}}, {{contact.firstName}}</li>
+  {{/each}}
+</ul>
