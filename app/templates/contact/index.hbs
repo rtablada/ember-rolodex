@@ -3,6 +3,6 @@
 
 <ul>
   {{#each model as |contact|}}
-    <li>{{contact.lastName}}, {{contact.firstName}}</li>
+    <li>{{contact.lastName}}, {{contact.firstName}} <button onclick={{action "remove" contact}}>Delete</button></li>
   {{/each}}
 </ul>
