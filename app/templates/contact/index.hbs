@@ -3,6 +3,9 @@
 
 <ul>
   {{#each model as |contact|}}
-    <li>{{contact.lastName}}, {{contact.firstName}} <button onclick={{action "remove" contact}}>Delete</button></li>
+    <li>
+      {{#link-to "contact.detail" contact}}{{contact.lastName}}, {{contact.firstName}}{{/link-to}}
+      <button onclick={{action "remove" contact}}>Delete</button>
+    </li>
   {{/each}}
 </ul>
