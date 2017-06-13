@@ -1,1 +1,11 @@
-{{outlet}}
+<dl>
+  <dt>First Name</dt>
+  <dd>{{model.firstName}}</dd>
+
+  <dt>Last Name</dt>
+  <dd>{{model.lastName}}</dd>
+</dl>
+
+<p>
+  {{#link-to "contact.index"}}Back{{/link-to}}
+</p>
