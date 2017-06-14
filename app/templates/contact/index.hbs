@@ -2,9 +2,9 @@
 <h3>{{#link-to "contact.new"}}Add New Contact{{/link-to}}</h3>
 
 <ul>
-  {{#each model as |contact|}}
+  {{#each model.data as |contact|}}
     <li>
-      {{#link-to "contact.detail" contact}}{{contact.lastName}}, {{contact.firstName}}{{/link-to}}
+      {{#link-to "contact.detail" contact.id}}{{contact.attributes.last-name}}, {{contact.attributes.first-name}}{{/link-to}}
       <button onclick={{action "remove" contact}}>Delete</button>
     </li>
   {{/each}}

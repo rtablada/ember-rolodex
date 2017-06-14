@@ -11,7 +11,12 @@ export default Ember.Controller.extend({
           accept: 'application/json',
           'content-type': 'application/json'
         },
-        body: JSON.stringify(this.model),
+        body: JSON.stringify({
+          data: {
+            type: 'contact',
+            attributes: this.model
+          }
+        }),
       }).then(() => {
         this.transitionToRoute('contact.index');
       });

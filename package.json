@@ -43,5 +43,8 @@
   },
   "engines": {
     "node": ">= 4"
+  },
+  "dependencies": {
+    "yayson": "^2.0.3"
   }
 }
